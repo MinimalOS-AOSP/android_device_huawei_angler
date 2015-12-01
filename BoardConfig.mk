@@ -135,5 +135,10 @@ EXTENDED_FONT_FOOTPRINT := true
 TARGET_KERNEL_CONFIG := angler_defconfig
 TARGET_KERNEL_SOURCE := kernel/huawei/angler
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9-kernel/bin
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+
+CLANG_O3 := true
+STRICT_ALIASING := true
+GRAPHITE_OPTS := true
+ENABLE_GCCONLY := true
